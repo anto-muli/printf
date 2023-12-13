@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * output_pointers - Prints the val pointed variable by a pointer
- * @types: List a of args
+ * output_pointers - Outputs the val pointed variable by a pointer
+ * @types: List a of arguements
  * @buffer: Buffer array to handle print functs
  * @flags:  Computes active flags
  * @width: secures the width
  * @precision: Precision specs
  * @size: Size specifier in the code
- * Return: The # of chars ouputed
+ * Return: The # of characters ouputed
  */
 int output_pointers(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -49,13 +49,13 @@ int output_pointers(va_list types, char buffer[],
 }
 /**
  * output_nonprintables - Lithos the ascii codes in hexa of non printable chars
- * @types: Lists of args
+ * @types: Lists of arguements
  * @buffer: Buffer array to handle print functs
  * @flags:  Enumerates dynamic flags
  * @width: Secures the width
  * @precision: Precision specs
  * @size: Size specs-fier
- * Return: The # of chars lithoed
+ * Return: The # of characters lithoed
  */
 int output_nonprintables(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
