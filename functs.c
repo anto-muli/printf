@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * output_chars - Outputss a char
- * @types: List a of args
+ * output_chars - prints a characters
+ * @types: List a of arguements
  * @buffer: Buffer array to handle print function
- * @flags:  Calcs active flags
+ * @flags:  Calculates active flags
  * @width: Width of the array
  * @precision: Precision specs
  * @size: Size specs- fier
- * Return: Number of chars outputed
+ * Return: Number of characters outputed
  */
 int output_chars(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -18,14 +18,14 @@ int output_chars(va_list types, char buffer[],
 	return (deals_with_write_char(c, buffer, flags, width, precision, size));
 }
 /**
- * output_str - Prints a str in theprog
+ * output_str - Outputs a string in theprog
  * @types: List a of args
  * @buffer: Buffer array to handle print function
- * @flags:  Getss active flags
- * @width: get width in the array in the prog
- * @precision: Precision specs
+ * @flags:  Gets active flags
+ * @width: get width in the array in the progress
+ * @precision: Precision specification
  * @size: Size specs-ier
- * Return: # of chars printed
+ * Return: # of characters printed
  */
 int output_str(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -70,14 +70,14 @@ int output_str(va_list types, char buffer[],
 	return (write(1, str, length));
 }
 /**
- * output_percentages - Prints a % sign
+ * output_percentages - Outputs a % sign
  * @types: Lists of args
  * @buffer: Buffer array to handle print function
  * @flags:  Gets active flags
  * @width: Gets width.
  * @precision: Precision specs
  * @size: Size specifier
- * Return: # of chars outputed
+ * Return: # of characters outputed
  */
 int output_percentages(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -92,14 +92,14 @@ int output_percentages(va_list types, char buffer[],
 }
 
 /**
- * print_int - Print ints inthe prog
+ * print_int - Outputs integers inthe progress
  * @types: Lists all of args
  * @buffer: Buffer array to handle print function
  * @flags:  Getss active flags
  * @width: get width ot he prog
  * @precision: Precision specs
  * @size: Size specifier
- * Return: # of chars outputed
+ * Return: # of characters outputed
  */
 int output_ints(va_list types, char buffer[],
 			int flags, int width, int precision, int size)
@@ -132,14 +132,14 @@ int output_ints(va_list types, char buffer[],
 }
 
 /**
- * output_binaries - Prints all unsigned #s
+ * output_binaries - Outputs all unsigned #s
  * @types: Lists args
  * @buffer: Buffer array to handle print funtion
  * @flags:  Gets active flags
  * @width: gets width in the program
  * @precision: Precision specs
  * @size: Size specifier
- * Return: # of chars outputed
+ * Return: # of characters outputed
  */
 int output_binaries(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
