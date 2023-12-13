@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * secure_flags - Enumerates dynamic flags
- * @format: Forms the str to print the args
+ * secure_flags - Counts dynamic flags
+ * @format: Forms the string to print the arguements
  * @i: takes a parameter
  * Return: The flags:
  */
