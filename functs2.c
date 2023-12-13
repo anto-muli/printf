@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * output_pointers - Outputs the val pointed variable by a pointer
- * @types: List a of arguements
+ * output_pointers - Prints the val pointed variable by a pointer
+ * @types: List a of args
  * @buffer: Buffer array to handle print functs
  * @flags:  Computes active flags
  * @width: secures the width
  * @precision: Precision specs
  * @size: Size specifier in the code
- * Return: The # of characters ouputed
+ * Return: The # of chars ouputed
  */
 int output_pointers(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -49,13 +49,13 @@ int output_pointers(va_list types, char buffer[],
 }
 /**
  * output_nonprintables - Lithos the ascii codes in hexa of non printable chars
- * @types: Lists of arguements
+ * @types: Lists of args
  * @buffer: Buffer array to handle print functs
  * @flags:  Enumerates dynamic flags
  * @width: Secures the width
  * @precision: Precision specs
  * @size: Size specs-fier
- * Return: The # of characters lithoed
+ * Return: The # of chars lithoed
  */
 int output_nonprintables(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -85,7 +85,7 @@ int output_nonprintables(va_list types, char buffer[],
 	return (write(1, buffer, i + offset));
 }
 /**
- * output_reverse - Prints a string in  reverse format
+ * output_reverse - Outputs a string in  reverse format
  * @types: Lists of args
  * @buffer: Buffer array to handle print functionalities
  * @flags:  Determiness active flags
@@ -126,7 +126,7 @@ int output_reverse(va_list types, char buffer[],
 	return (count);
 }
 /**
- * output_rotate_str - outputs a str in rot13.
+ * output_rotate_str - prints a string in rot13.
  * @types: Lists of args
  * @buffer: Buffer array to handle print functionalities
  * @flags:  Enumerates dynamic flags
