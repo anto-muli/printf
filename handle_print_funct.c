@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * deals_with_print - Outputss an args depending on its type
+ * deals_with_print - Prints an args depending on its type
  * @fmt: Formatted str to print the args into
  * @list: List of args to be printed.
  * @ind: the ind
